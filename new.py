@@ -63,7 +63,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options as chromeOptions
 from selenium.webdriver.edge.options import Options as EdgeOptions
 username = "rakeshslambdatest"
-access_key = "MIBbYCQdJybdc0R0STUXKaZYt8XimqqH7lYBGi5hO2Rw0Oxjjw"
+access_key = "MHu1nfiZVVPSteHsFVqybmvsxePoFJq0j8htKDk7uHcRwPgLGg"
 grid_Url = "hub.lambdatest.com/wd/hub"
 options = webdriver.ChromeOptions()
 options.browser_version = ""
