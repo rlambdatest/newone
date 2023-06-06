@@ -32,5 +32,9 @@ jobs:
       run: |
     - name: Test with pytest
       run: |
-        python new.py
+        - task: CmdLine@2
+  inputs:
+    script: |
+      pip install selenium
+      python new.py
 
