@@ -1,26 +1,33 @@
-trigger:
-- main
+name: Python application
 
-pool:
-  vmImage: ubuntu-latest
-strategy:
-  matrix:
-    Python27:
-      python:version: '3.0'
+on:
+  push:
+    branches: [ "main" ]
+  
 
-steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '$(python.version)'
-  displayName: 'Use Python $(python.version)'
+permissions:
+  contents: read
 
-- script: |
-    python -m pip install --upgrade pip
-    pip install selenium
-    pip install -r requirements.txt
-  displayName: 'Install dependencies'
+jobs:
+  build:
 
-- script: |
-    pip install pytest pytest-azurepipelines
-    python new.py
-  displayName: 'pytest'
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+
+        pip install selenium
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Lint with flake8
+      run: |
+        
+    - name: Test with pytest
+      run: |
+        python new.py
