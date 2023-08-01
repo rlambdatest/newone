@@ -71,12 +71,6 @@ options.platform_name = "Windows 11"
 lt_options = {}
 lt_options["username"] ="ritamg"
 lt_options["accessKey"] ="lHWNSA0QECwjeN8DoDb9U6KyXMBgAFXqlIIArkxeOTDSeEdLyG"
-
-
-
-
-
-"
 lt_options["project"] = "Parallel1"
 lt_options["selenium_version"] = "4.0.0"
 lt_options["w3c"] = True
