@@ -69,8 +69,8 @@ options = webdriver.ChromeOptions()
 options.browser_version = ""
 options.platform_name = "Windows 11"
 lt_options = {}
-lt_options["username"] =os.environ.get("LT_USERNAME")
-lt_options["accessKey"] =os.environ.get("LT_ACCESS_KEY")
+lt_options["username"] ="ritamg"
+lt_options["accessKey"] ="lHWNSA0QECwjeN8DoDb9U6KyXMBgAFXqlIIArkxeOTDSeEdLyG
 
 
 
