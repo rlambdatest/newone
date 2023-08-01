@@ -69,8 +69,14 @@ options = webdriver.ChromeOptions()
 options.browser_version = ""
 options.platform_name = "Windows 11"
 lt_options = {}
-lt_options["username"] = "rakeshslambdatest"
-lt_options["accessKey"] = "MIBbYCQdJybdc0R0STUXKaZYt8XimqqH7lYBGi5hO2Rw0Oxjjw"
+lt_options["username"] = "niteshs"
+lt_options["accessKey"] = "f9sgRCN4skIefNxgBBrv5Ah494XEdCt06S0ZfbqN7OfKKm5w3x
+
+
+
+
+
+"
 lt_options["project"] = "Parallel1"
 lt_options["selenium_version"] = "4.0.0"
 lt_options["w3c"] = True
