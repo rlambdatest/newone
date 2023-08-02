@@ -32,10 +32,6 @@ driver = webdriver.Remote(
     command_executor=url,
     options=options
     )
-driver1 = webdriver.Remote(
-    command_executor=url,
-    options=options2
-    )
 driver.get("https://accounts.lambdatest.com/")
 # driver.get("https://accounts.lambdatest.com/")
 u_name = driver.find_element("id", "email")
